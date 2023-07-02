@@ -57,6 +57,21 @@
     <ClInclude Include="ChintWin.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="CcurtainWin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ClampWin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CwindowWin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CmonitorWin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChotwaterWin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CLabel.cpp">
@@ -102,6 +117,21 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ChintWin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CcurtainWin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClampWin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CwindowWin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CmonitorWin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChotwaterWin.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

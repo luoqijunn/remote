@@ -3,16 +3,16 @@
 CinsdevWin::CinsdevWin(int x, int y, int w, int h) : CwinBase(x, y, w, h)
 {
 	//创建CLabel对象
-	this->titleLabel = new CLabel(39, 2, "添 加 设 备");
-	this->devnameLabel = new CLabel(25, 5, "设备名：");
-	this->devtypeLabel = new CLabel(25, 8, "设备类型：");
-	this->typetipLabel = new CLabel(20, 10, "tips：设备类型只可输入数字；1为空调，2为...");
+	this->titleLabel = new CLabel(43, 2, "添 加 设 备");
+	this->devnameLabel = new CLabel(29, 5, "设备名：");
+	this->devtypeLabel = new CLabel(29, 8, "设备类型：");
+	this->typetipLabel = new CLabel(10, 10, "tips：设备类型只可输入数字。1为空调，2为灯光，3为窗户，4为窗帘，5为监控，6为热水器");
 	//创建CEdit对象
-	this->devnameEdit = new CEdit(35, 4, 15, 3, "", 1, 2, 6, 4);
-	this->devtypeEdit = new CEdit(35, 7, 15, 3, "", 0, 1, 2, 1);
+	this->devnameEdit = new CEdit(39, 4, 15, 3, "", 1, 2, 6, 4);
+	this->devtypeEdit = new CEdit(39, 7, 15, 3, "", 0, 1, 2, 1);
 	//创建CButton对象
 	this->confirmButton = new CButton(28, 14, 6, 3, "确 认");
-	this->exitButton = new CButton(52, 14, 6, 3, "返 回");
+	this->exitButton = new CButton(59, 14, 6, 3, "返 回");
 
 	//添加到控件向量容器中
 	this->ctrlArry.push_back(this->titleLabel);		//0

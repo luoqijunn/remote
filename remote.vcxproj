@@ -21,11 +21,15 @@
   <ItemGroup>
     <ClInclude Include="CACWin.h" />
     <ClInclude Include="CButton.h" />
+    <ClInclude Include="CcurtainWin.h" />
     <ClInclude Include="CEdit.h" />
     <ClInclude Include="ChintWin.h" />
+    <ClInclude Include="ChotwaterWin.h" />
     <ClInclude Include="CinsdevWin.h" />
     <ClInclude Include="CLabel.h" />
+    <ClInclude Include="ClampWin.h" />
     <ClInclude Include="CLoginWin.h" />
+    <ClInclude Include="CmonitorWin.h" />
     <ClInclude Include="CmyData.h" />
     <ClInclude Include="CRegWin.h" />
     <ClInclude Include="CrmdevWin.h" />
@@ -33,15 +37,20 @@
     <ClInclude Include="CTool.h" />
     <ClInclude Include="Ctrlbase.h" />
     <ClInclude Include="Cwinbase.h" />
+    <ClInclude Include="CwindowWin.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CACWin.cpp" />
     <ClCompile Include="CButton.cpp" />
+    <ClCompile Include="CcurtainWin.cpp" />
     <ClCompile Include="CEdit.cpp" />
     <ClCompile Include="ChintWin.cpp" />
+    <ClCompile Include="ChotwaterWin.cpp" />
     <ClCompile Include="CinsdevWin.cpp" />
     <ClCompile Include="CLabel.cpp" />
+    <ClCompile Include="ClampWin.cpp" />
     <ClCompile Include="CLoginWin.cpp" />
+    <ClCompile Include="CmonitorWin.cpp" />
     <ClCompile Include="CmyData.cpp" />
     <ClCompile Include="CRegWin.cpp" />
     <ClCompile Include="CrmdevWin.cpp" />
@@ -49,6 +58,7 @@
     <ClCompile Include="CTool.cpp" />
     <ClCompile Include="Ctrlbase.cpp" />
     <ClCompile Include="Cwinbase.cpp" />
+    <ClCompile Include="CwindowWin.cpp" />
     <ClCompile Include="demo1.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -8,6 +8,11 @@
 #include "CrmdevWin.h"
 #include "CACWin.h"
 #include "ChintWin.h"
+#include "ClampWin.h"
+#include "CwindowWin.h"
+#include "CcurtainWin.h"
+#include "CmonitorWin.h"
+#include "ChotwaterWin.h"
 
 int main(void)
 {
@@ -45,13 +50,18 @@ int main(void)
 	
 	vector<CwinBase*> winArry;
 	//创建登录类的对象
-	CRegWin* reg = new CRegWin(13, 1, 33, 18);				// 0
-	CLoginWin* login = new CLoginWin(13, 1, 33, 18);		// 1
-	CseldevWin* seldev = new CseldevWin(13, 1, 33, 18);		// 2
-	CinsdevWin* insdev = new CinsdevWin(13, 1, 33, 18);		// 3
-	CrmdevWin* rmdev = new CrmdevWin(13, 1, 33, 18);		// 4
-	CACWin* AC = new CACWin(13, 1, 19, 37);					// 5
-	ChintWin* hint = new ChintWin(13, 5, 20, 9);			// 6
+	CRegWin* reg = new CRegWin(13, 1, 33, 18);				// 0 注册
+	CLoginWin* login = new CLoginWin(13, 1, 33, 18);		// 1 登录
+	CseldevWin* seldev = new CseldevWin(13, 1, 33, 18);		// 2 选择
+	CinsdevWin* insdev = new CinsdevWin(7, 1, 45, 18);		// 3 添加
+	CrmdevWin* rmdev = new CrmdevWin(13, 1, 33, 18);		// 4 删除
+	CACWin* AC = new CACWin(13, 1, 19, 37);					// 5 空调
+	ChintWin* hint = new ChintWin(13, 5, 20, 9);			// 6 提示窗口
+	ClampWin* lamp = new ClampWin(13, 1, 19, 37);			// 7 灯光类
+	CwindowWin* window = new CwindowWin(13, 1, 19, 37);		// 8 窗戶
+	CcurtainWin* curtain = new CcurtainWin(13, 1, 19, 37);	// 9 窗帘
+	CmonitorWin* monitor = new CmonitorWin(13, 1, 19, 37);	//10 监控
+	ChotwaterWin* hotwater = new ChotwaterWin(13, 1, 19, 37); //11 热水器
 
 	winArry.push_back(login);	// 0
 	winArry.push_back(reg);		// 1
@@ -60,6 +70,11 @@ int main(void)
 	winArry.push_back(rmdev);	// 4
 	winArry.push_back(AC);		// 5
 	winArry.push_back(hint);	// 6
+	winArry.push_back(lamp);    // 7
+	winArry.push_back(window);  // 8
+	winArry.push_back(curtain); // 9
+	winArry.push_back(monitor); // 10
+	winArry.push_back(hotwater); // 11
 
 
 	short winres = 0;	//当前窗口是登录为0，注册为1

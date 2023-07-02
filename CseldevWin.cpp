@@ -116,13 +116,21 @@ int CseldevWin::doAction()
 		{
 			//cout << "查询成功" << endl;
 			getdevID = atoi(mydata->qres[(this->focusIndex) * mydata->col]);
-			//cout << getdevID << endl;
-			//cout << atoi(mydata->qres[((this->focusIndex) * mydata->col) + 3]) << endl;
-			//system("pause");
+			cout << getdevID << endl;
+			cout << atoi(mydata->qres[((this->focusIndex) * mydata->col) + 3]) << endl;
+			system("pause");
 			if (1 == atoi(mydata->qres[((this->focusIndex) * mydata->col) + 3]))	//空调
 				return 5;
-			else if (2 == atoi(mydata->qres[((this->focusIndex) * mydata->col) + 3]))	//灯
-				return 5;
+			else if (2 == atoi(mydata->qres[((this->focusIndex) * mydata->col) + 3]))	//灯光类
+				return 7;
+			else if (3 == atoi(mydata->qres[((this->focusIndex) * mydata->col) + 3]))	//窗戶
+				return 8;
+			else if (4 == atoi(mydata->qres[((this->focusIndex) * mydata->col) + 3]))	//窗帘
+				return 9;
+			else if (5 == atoi(mydata->qres[((this->focusIndex) * mydata->col) + 3]))	//监控
+				return 10;
+			else if (6 == atoi(mydata->qres[((this->focusIndex) * mydata->col) + 3]))	//热水器
+				return 11;
 			else
 			{
 				//调用tips对话框
